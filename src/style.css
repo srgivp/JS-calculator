@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(250, 251, 252);
+}
+body {
+  position: relative;
+  height: 100vh;
+}
+#for-react-content {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: beige;
+}
+#calculator {
+  position: absolute;
+  width: 39%;
+  max-width: 470px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 7px;
+  justify-content: space-between;
+  box-sizing: content-box;
+  border: solid 3px rgb(48, 50, 53);
+}
+#display {
+  position: relative;
+  text-align: right;
+  min-height: 5vw;
+  height: auto;
+  overflow-wrap: break-word;
+  line-height: 90%;
+  padding: 5px;
+  width: 100%;
+  border-bottom: solid 3px rgb(61, 53, 53);
+  font-size: 3.9vw;
+  font-family: "titillium web";
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: aliceblue;
+}
+#display::before {
+  content: "";
+  padding-top: 17.5%;
+  float: left;
+}
+#allKeysContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5%;
+  color: aliceblue;
+  background-color: beige;
+}
+#clear {
+  order: 1;
+  margin: inherit;
+  width: 36.5%;
+}
+#backspace {
+  order: 2;
+  margin: inherit;
+  width: 36.5%;
+}
+#divide {
+  order: 3;
+  margin: inherit;
+  width: 24%;
+}
+#seven {
+  order: 4;
+  margin: inherit;
+  width: 24%;
+}
+#eight {
+  order: 5;
+  margin: inherit;
+  width: 24%;
+}
+#nine {
+  order: 6;
+  margin: inherit;
+  width: 24%;
+}
+#multiply {
+  order: 7;
+  margin: inherit;
+  width: 24%;
+}
+#four {
+  order: 8;
+  margin: inherit;
+  width: 24%;
+}
+#five {
+  order: 9;
+  margin: inherit;
+  width: 24%;
+}
+#six {
+  order: 10;
+  margin: inherit;
+  width: 24%;
+}
+#subtract {
+  order: 11;
+  margin: inherit;
+  width: 24%;
+}
+#one {
+  order: 12;
+  margin: inherit;
+  width: 24%;
+}
+#two {
+  order: 13;
+  margin: inherit;
+  width: 24%;
+}
+#three {
+  order: 14;
+  margin: inherit;
+  width: 24%;
+}
+#add {
+  order: 15;
+  margin: inherit;
+  width: 24%;
+}
+#zero {
+  order: 16;
+  margin: inherit;
+  width: 49%;
+}
+#decimal {
+  order: 17;
+  margin: inherit;
+  width: 24%;
+}
+#equals {
+  order: 18;
+  margin: inherit;
+  width: 24%;
+}
+.figureKeys {
+  width: 32.1%;
+  text-align: center;
+  margin: inherit;
+}
+
+.keys {
+  display: flex;
+  background-color: grey;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: solid 1px rgb(61, 48, 11);
+  font-size: 3vw;
+}
+.operatorKeys::before,
+#one::before,
+#two::before,
+#three::before,
+#for::before,
+#five::before,
+#six::before,
+#seven::before,
+#eight::before,
+#nine::before,
+#equals::before,
+#decimal::before {
+  content: "";
+  padding-top: 70%;
+  float: left;
+}
+@media only screen and (max-width: 400px) {
+  #calculator {
+    width: 90%;
+  }
+}
+#attribution {
+  font-size: 70%;
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
