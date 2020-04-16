@@ -185,6 +185,13 @@ body {
 @media only screen and (max-width: 400px) {
   #calculator {
     width: 90%;
+    height: 90%;
+  }
+  #display {
+    font-size: 9vw;
+  }
+  .keys {
+    font-size: 7vw;
   }
 }
 #attribution {
